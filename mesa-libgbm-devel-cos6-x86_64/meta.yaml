@@ -1,5 +1,5 @@
 package:
-  name: mesa-libgbm-cos6-x86_64
+  name: mesa-libgbm-devel-cos6-x86_64
   version: 11.0.7
 
 source:
