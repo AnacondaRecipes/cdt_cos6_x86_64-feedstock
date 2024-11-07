@@ -1,0 +1,33 @@
+package:
+  name: mesa-libgbm-devel-cos6-x86_64
+  version: 11.0.7
+
+source:
+  - url: http://vault.centos.org/centos/6.10/os/x86_64/Packages/mesa-libgbm-devel-11.0.7-4.el6.x86_64.rpm
+    sha256: 8bea09887822544f4a300fe88c09d5153c8e80dbb154ab69773e703c8cd06508
+    no_hoist: true
+    folder: binary
+  - url: http://vault.centos.org/6.10/os/Source/SPackages/mesa-11.0.7-4.el6.src.rpm
+    folder: source
+
+build:
+  number: 0
+  noarch: generic
+  missing_dso_whitelist:
+    - '*'
+
+requirements:
+  build:
+    - mesa-libgbm-cos6-x86_64 ==11.0.7
+  host:
+    - mesa-libgbm-cos6-x86_64 ==11.0.7
+  run:
+    - mesa-libgbm-cos6-x86_64 ==11.0.7
+
+about:
+  home: http://www.mesa3d.org
+  license: MIT
+  license_family: MIT
+  summary: "(CDT) Mesa gbm development package"
+  description: |
+        Mesa gbm runtime development package.
